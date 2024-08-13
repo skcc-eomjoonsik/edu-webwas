@@ -1,4 +1,4 @@
-# Apache, Tomcat 구성 실습
+# Apache, Tomcat 구성 실습 (2024년 8월 29일)
 
 ## 1. Apache 설치
 
