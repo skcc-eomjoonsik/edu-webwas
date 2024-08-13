@@ -89,11 +89,7 @@
             <td><%= getServletContext().getServletContextName() %></td>
         </tr>
         <tr>
-            <td>Session ID</td>
-            <td><%= session.getId() %></td>
-        </tr>
-        <tr>
-            <td>Cookies</td>
+            <td>Cookies - Client가 보낸 Session(쿠키) 정보</td>
             <td>
                 <%
                     Cookie[] cookies = request.getCookies();
@@ -106,6 +102,10 @@
                     }
                 %>
             </td>
+        </tr>
+        <tr>
+            <td>Session ID - Server가 응답한 Session 정보</td>
+            <td><%= session.getId() %></td>
         </tr>
     </table>
 </body>
