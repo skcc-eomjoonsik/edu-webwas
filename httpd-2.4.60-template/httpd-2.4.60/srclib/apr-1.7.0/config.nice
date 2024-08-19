@@ -1,0 +1,21 @@
+#! /bin/sh
+#
+# Created by configure
+
+"/home/webwas/education/httpd-2.4.60-template/httpd-2.4.60/srclib/apr/configure" \
+"--disable-option-checking" \
+"--enable-mods-shared=all" \
+"--with-mpm=event" \
+"--with-included-apr" \
+"--enable-ssl" \
+"--enable-http2" \
+"--cache-file=/dev/null" \
+"--srcdir=/home/webwas/education/httpd-2.4.60-template/httpd-2.4.60/srclib/apr" \
+"--prefix=/software/apache" \
+"--exec-prefix=/software/apache" \
+"--libdir=/software/apache/lib" \
+"--includedir=/software/apache/include" \
+"--bindir=/software/apache/bin" \
+"--datadir=/software/apache" \
+"--with-installbuilddir=/software/apache/build" \
+"$@"

@@ -1,0 +1,50 @@
+Making all in common
+make[1]: Entering directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/common'
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_ajp12_worker.c -o jk_ajp12_worker.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_connect.c -o jk_connect.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_msg_buff.c -o jk_msg_buff.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_util.c -o jk_util.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_ajp13.c -o jk_ajp13.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_pool.c -o jk_pool.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_worker.c -o jk_worker.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_ajp13_worker.c -o jk_ajp13_worker.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_lb_worker.c -o jk_lb_worker.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_sockbuf.c -o jk_sockbuf.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_map.c -o jk_map.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_uri_worker_map.c -o jk_uri_worker_map.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_ajp14.c -o jk_ajp14.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_ajp14_worker.c -o jk_ajp14_worker.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_md5.c -o jk_md5.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_shm.c -o jk_shm.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_ajp_common.c -o jk_ajp_common.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_context.c -o jk_context.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_url.c -o jk_url.lo
+/software/apache/build/libtool --silent --mode=compile gcc -I. -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -DLINUX -D_REENTRANT -D_GNU_SOURCE -c jk_status.c -o jk_status.lo
+make[1]: Leaving directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/common'
+Making all in apache-2.0
+make[1]: Entering directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/apache-2.0'
+/software/apache/build/libtool --silent --mode=compile gcc -I/software/apache/include  -DHAVE_CONFIG_H -DUSE_APACHE_MD5 -I../common -I ../common -DLINUX -D_REENTRANT -D_GNU_SOURCE -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DLINUX -D_REENTRANT -D_GNU_SOURCE -c mod_jk.c -o mod_jk.lo
+/software/apache/build/libtool --silent --mode=link gcc -I/software/apache/include  -DHAVE_CONFIG_H -DUSE_APACHE_MD5 -I../common -I ../common -DLINUX -D_REENTRANT -D_GNU_SOURCE -g -O2 -DHAVE_APR  -I/software/apache/include -I/software/apache/include  -DHAVE_CONFIG_H -g -O2 -DLINUX -D_REENTRANT -D_GNU_SOURCE  -export-symbols-regexp ^jk_module$ -o mod_jk.la -module -rpath /software/apache/modules -avoid-version mod_jk.lo ../common/jk_ajp12_worker.lo ../common/jk_connect.lo ../common/jk_msg_buff.lo ../common/jk_util.lo ../common/jk_ajp13.lo ../common/jk_pool.lo ../common/jk_worker.lo ../common/jk_ajp13_worker.lo ../common/jk_lb_worker.lo ../common/jk_sockbuf.lo ../common/jk_map.lo ../common/jk_uri_worker_map.lo ../common/jk_ajp14.lo ../common/jk_ajp14_worker.lo ../common/jk_md5.lo ../common/jk_shm.lo ../common/jk_ajp_common.lo ../common/jk_context.lo ../common/jk_url.lo ../common/jk_status.lo
+../scripts/build/instdso.sh SH_LIBTOOL='/software/apache/build/libtool --silent' mod_jk.la `pwd`
+/software/apache/build/libtool --silent --mode=install cp mod_jk.la /home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/apache-2.0/
+libtool: warning: remember to run 'libtool --finish /software/apache/modules'
+make[1]: Leaving directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/apache-2.0'
+make[1]: Entering directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native'
+target="all"; \
+list='common apache-2.0'; \
+for i in $list; do \
+    echo "Making $target in $i"; \
+    if test "$i" != "."; then \
+       (cd $i && make $target) || exit 1; \
+    fi; \
+done;
+Making all in common
+make[1]: Entering directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/common'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/common'
+Making all in apache-2.0
+make[1]: Entering directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/apache-2.0'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/webwas/education/httpd-2.4.60-template/tomcat-connectors-1.2.49-src/native/apache-2.0'
