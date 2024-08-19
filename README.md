@@ -10,7 +10,7 @@
 cd /home/webwas/education
 
 # Apache 템플릿 파일 압축 해제
-tar xvf httpd-2.4.60-template.20240807.tar
+tar xvf httpd-2.4.60-template.20240813.tar
 
 # Apache 템플릿 폴더 이동
 cd /home/webwas/education/httpd-2.4.60-template
@@ -55,18 +55,10 @@ ls -l
 cd /software/apache/servers/apacheServer11/conf
 ls -l 
 
-# httpd.conf 파일 설정
-vi httpd.conf
-# Listen 80                     < (확인) 80 port설정
-# User webwas                   < (확인) httpd 프로세스 실행 user
-# Group webwas                  < (확인) httpd 프로세스 실행 group
-# ServerName www.example.com:80 < (확인) 도메인 설정 안할 거라 그대로 유지 *** 실제 운영 환경 구축시 해당 서버의 IP:Port로 수정
-# DocumentRoot "/home/webwas/education/sample-app/apache" < (수정)
-# <Directory "/home/webwas/education/sample-app/apache">  < (수정)
-
-# Error로그, Access로그 확인
-# Include 설정 확인(대부분 기본 값)
-# Include /software/apache/servers/apacheServer11/conf/extra/httpd-jk.conf
+# httpd.conf 파일 수정
+cp /home/webwas/education/sample-app/httpd.conf ./httpd.conf
+# (수정:155) DocumentRoot "/home/webwas/education/sample-app/apache"
+# (수정:156) <Directory "/home/webwas/education/sample-app/apache">
 
 # 인스턴스 실행
 cd /software/apache/servers/apacheServer11/shl
@@ -129,17 +121,18 @@ ls -l
 # server.xml을 cluster설정 파일로 변경(연동 테스트용)
 cp server.xml.cluster server.xml
 
+# context 설정 파일(ROOT.xml) 수정
+cd /software/tomcat/servers/tomcatServer11/conf/Catalina/localhost
+cp /home/webwas/education/sample-app/ROOT.xml ./ROOT.xml
+# (수정) docBase=/home/webwas/education/sample-app/tomcat
+# (수정) datasource 설정 추가(MYSQL)
+
 # 인스턴스 shl 폴더로 이동
 cd /software/tomcat/servers/tomcatServer11/shl
 ls -l
 
 # tomcat.env 기본 설정 파일 확인
 vi tomcat.env
-
-# tomcat Context 설정 파일 수정
-cd /software/tomcat/servers/tomcatServer11/conf/Catalina/localhost
-vi ROOT.xml
-#docBase="/home/webwas/education/sample-app/tomcat" (수정)
 
 # 인스턴스 실행
 cd /software/tomcat/servers/tomcatServer11/shl
@@ -176,23 +169,24 @@ ls -l
 # server.xml을 cluster설정 파일로 변경(연동 테스트용)
 cp server.xml.cluster server.xml
 
+# context 설정 파일(ROOT.xml) 수정
+cd /software/tomcat/servers/tomcatServer11/conf/Catalina/localhost
+cp /home/webwas/education/sample-app/ROOT.xml ./ROOT.xml
+# (수정) docBase=/home/webwas/education/sample-app/tomcat
+# (수정) datasource 설정 추가(MYSQL)
+
 # 인스턴스 shl 폴더로 이동
 cd /software/tomcat/servers/tomcatServer12/shl
 ls -l
 
 # tomcat.env 기본 설정 파일 수정
-vi tomcat.env
+cp /home/webwas/education/sample-app/tomcat.env ./tomcat.env
 # Port 정보 수정
 # tomcat.port.shutdown=8205
 # tomcat.port.http=8280
 # tomcat.port.https=8543
 # tomcat.port.ajp=8209
 # tomcat.cluster.receiver.port=5002
-
-# tomcat Context 설정 파일 수정
-cd /software/tomcat/servers/tomcatServer12/conf/Catalina/localhost
-vi ROOT.xml
-#docBase="/home/webwas/education/sample-app/tomcat" (수정)
 
 # 인스턴스 실행
 cd /software/tomcat/servers/tomcatServer12/shl
@@ -220,9 +214,10 @@ vim httpd-jk.conf
 vim uriworkermap.properties
 
 # workers.properties 파일 수정
+cp /home/webwas/education/sample-app/workers.properties ./workers.properties
+# CON_NAME_Must_Change1 -> tomcatServer11
+# CON_NAME_Must_Change2 -> tomcatServer12
 vi workers.properties
-# CON_NAME_Must_Change1 -> tomcatServer11    :%s/CON_NAME_Must_Change1/tomcatServer11/g
-# CON_NAME_Must_Change2 -> tomcatServer12    :%s/CON_NAME_Must_Change2/tomcatServer12/g
 # worker.tomcatServer1#.host=localhost -> 172.31.1xx.2
 
 # Apache 인스턴스 재기동
