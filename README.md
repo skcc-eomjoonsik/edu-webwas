@@ -170,7 +170,7 @@ ls -l
 cp server.xml.cluster server.xml
 
 # context 설정 파일(ROOT.xml) 수정
-cd /software/tomcat/servers/tomcatServer11/conf/Catalina/localhost
+cd /software/tomcat/servers/tomcatServer12/conf/Catalina/localhost
 cp /home/webwas/education/sample-app/ROOT.xml ./ROOT.xml
 # (수정) docBase=/home/webwas/education/sample-app/tomcat
 # (수정) datasource 설정 추가(MYSQL)
